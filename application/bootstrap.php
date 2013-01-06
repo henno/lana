@@ -114,6 +114,7 @@ Kohana::modules(array(
 	'commoneer'      => MODPATH.'commoneer',      // Image manipulation
 	// 'minion'     => MODPATH.'minion',     // CLI Tasks
 	'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+	'notify'        => MODPATH.'notify',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));

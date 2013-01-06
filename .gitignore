@@ -2,3 +2,4 @@
 application/logs/
 modules/commoneer/
 vendor/
+modules/notify/

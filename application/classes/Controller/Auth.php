@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Login extends Controller_Template {
-
+class Controller_Auth extends Controller_Template {
+    public $template = 'templates/public';
     public function action_index()
     {
         if( $this->request->post('username') ) {
@@ -13,11 +13,16 @@ class Controller_Login extends Controller_Template {
             $is_logged_in = Auth::instance()->logged_in();
             if ($is_logged_in) {
                 Notify::success('Success!');
-                $this->redirect('Welcome');
+                $this->redirect('welcome');
             } else {
                 Notify::error('Kasutajanimi või parool vale!');
             }
         }
+    }
+    public function action_logout()
+    {
+        Auth::instance()->logout();
+        $this->redirect('auth');
     }
 
 } // End Welcome

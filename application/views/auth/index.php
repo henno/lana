@@ -31,7 +31,7 @@
     }
 </style>
 
-    <form class="form-signin" action="<?php echo URL::base(); ?>login" method="POST">
+    <form class="form-signin" action="<?php echo URL::base(); ?>auth" method="POST">
         <h2 class="form-signin-heading">Please sign in</h2>
         <input name="username" type="text" class="input-block-level" placeholder="Email address">
         <input name="password" type="password" class="input-block-level" placeholder="Password">
