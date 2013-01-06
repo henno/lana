@@ -12,7 +12,11 @@
 
     <tr>
         <td><?=$group->id?></td>
-        <td><?=$group->name?></td>
+        <td>
+            <a href="<?=URL::base()?>groups/view/<?=$group->id?>">
+                <?=$group->name?>
+            </a>
+        </td>
     </tr>
 
         <? endforeach?>

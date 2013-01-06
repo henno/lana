@@ -8,6 +8,11 @@ class Controller_Groups extends Controller_Main
         $this->content->groups = $this->_orm->find_all();
     }
 
+    public function action_view()
+    {
+
+    }
+
 
     public function action_add()
     {
