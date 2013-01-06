@@ -18,7 +18,12 @@ class Controller_Groups extends Controller_Main
             $group_data = $this->request->post('group');
 
             // Save the new group to the MySQL DB
-            $this->_orm->save_group($group_data);
+            try {
+                $this->_orm->save_group($group_data);
+                $this->redirect('groups');
+            } catch (ORM_Validation_Exception $e) {
+                Notify::error("Palun normaalseid andmeid!");
+            }
         }
     }
 }

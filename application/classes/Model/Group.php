@@ -12,8 +12,7 @@ class Model_Group extends ORM
     {
         return [
             'name' => [
-                ['not_empty'],
-                ['alpha_dash']
+                ['not_empty']
             ]
         ];
     }
