@@ -1,16 +1,17 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Auth extends Controller_Template {
+class Controller_Auth extends Controller_Template
+{
     public $template = 'templates/public';
+
     public function action_index()
     {
-        if( $this->request->post('username') ) {
+        if ($this->request->post('username')) {
             $username = $this->request->post('username');
             $password = $this->request->post('password');
 
-            // Hack: repair later //todo
-            Auth::instance()->force_login('demo');
-            $is_logged_in = Auth::instance()->logged_in();
+            $is_logged_in = Auth::instance()->login($username, $password);
+
             if ($is_logged_in) {
                 Notify::success('Success!');
                 $this->redirect('welcome');
@@ -19,6 +20,7 @@ class Controller_Auth extends Controller_Template {
             }
         }
     }
+
     public function action_logout()
     {
         Auth::instance()->logout();
