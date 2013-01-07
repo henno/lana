@@ -1,19 +1,20 @@
-# Kohana PHP Framework
+# "Lana"
 
-[Kohana](http://kohanaframework.org/) is an elegant, open source, and object oriented HMVC framework built using PHP5, by a team of volunteers. It aims to be swift, secure, and small.
+... is a two-day Kohana / PHP workshop project. The workshop was held in Tartu KHK, Jan 5-6 2013.
 
-Released under a [BSD license](http://kohanaframework.org/license), Kohana can be used legally for any open source, commercial, or personal project.
+## For The Participants
 
-## Documentation
-Kohana's documentation can be found at <http://kohanaframework.org/documentation> which also contains an API browser.
+You can grab a copy of the code here and hack away on your own. You can get some ideas on what to do from [https://github.com/anroots/lana/blob/master/Extra.md](Extra.md).
 
-The `userguide` module included in all Kohana releases also allows you to view the documentation locally. Once the `userguide` module is enabled in the bootstrap, it is accessible from your site via `/index.php/guide` (or just `/guide` if you are rewriting your URLs).
+Feel free to send your technical questions to <ando.roots@diara.ee>.
 
-## Reporting bugs
-If you've stumbled across a bug, please help us out by [reporting the bug](http://dev.kohanaframework.org/projects/kohana3/) you have found. Simply log in or register and submit a new issue, leaving as much information about the bug as possible, e.g.
+## About
 
-* Steps to reproduce
-* Expected result
-* Actual result
+The project is a web app for teachers: manage students, study groups, exams and grades.
 
-This will help us to fix the bug as quickly as possible, and if you'd like to fix it yourself feel free to [fork us on GitHub](https://github.com/kohana) and submit a pull request!
+Built using Kohana 3.3, PHP 5.4 and Twitter Bootstrap.
+
+## Instructors
+
+* Ando Roots <ando.roots@diara.ee>
+* Henno Täht <henno.taht@diara.ee>
