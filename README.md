@@ -4,7 +4,10 @@
 
 ## For The Participants
 
-You can grab a copy of the code here and hack away on your own. You can get some ideas on what to do from [https://github.com/anroots/lana/blob/master/Extra.md](Extra.md).
+You can grab a copy of the code here and hack away on your own. You can get some ideas on what to 
+do from [https://github.com/anroots/lana/blob/master/Extra.md].
+
+**Read the [https://github.com/anroots/lana/wiki](Wiki)** for customer requirements and additional info.
 
 Feel free to send your technical questions to <ando.roots@diara.ee>.
 
